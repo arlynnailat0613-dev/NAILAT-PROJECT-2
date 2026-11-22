@@ -1,0 +1,748 @@
+
+/* =====================================
+   KCC ABOUT PAGE
+   Kabankalan Catholic College, Inc.
+===================================== */
+
+:root {
+  --kcc-navy: #102b50;
+  --kcc-dark: #091b32;
+  --kcc-gold: #d6a83e;
+  --kcc-light: #f5f6f9;
+  --kcc-text: #687588;
+  --kcc-white: #ffffff;
+}
+
+/* GENERAL */
+
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: var(--kcc-dark);
+}
+
+.about-page a {
+  text-decoration: none;
+}
+
+.about-page section {
+  scroll-margin-top: 90px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  color: var(--kcc-gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.section-heading {
+  color: var(--kcc-navy);
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--kcc-navy);
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: var(--kcc-text);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* HEADER */
+
+#header.header {
+  background: var(--kcc-white);
+  box-shadow: 0 3px 20px rgba(0,0,0,.07);
+  padding: 12px 0;
+  min-height: 80px;
+  z-index: 999;
+}
+
+#header .logo {
+  gap: 12px;
+}
+
+#header .logo img {
+  width: 53px;
+  height: 53px;
+  object-fit: contain;
+}
+
+#header .logo-text h1 {
+  color: var(--kcc-navy);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+#header .logo-text span {
+  display: block;
+  font-size: 9px;
+  color: #777;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+#header .navmenu a {
+  color: var(--kcc-navy);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#header .navmenu a:hover,
+#header .navmenu a.active {
+  color: var(--kcc-gold);
+}
+
+#header .btn-getstarted {
+  background: var(--kcc-gold);
+  color: var(--kcc-navy);
+  border-radius: 30px;
+  padding: 12px 22px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+#header .btn-getstarted:hover {
+  background: var(--kcc-navy);
+  color: white;
+}
+
+/* HERO */
+
+.about-hero {
+  min-height: 390px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(9,27,50,.93),
+      rgba(16,43,80,.65)
+    ),
+    url('../img/about/about-banner.jpg') center/cover no-repeat;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.hero-subtitle {
+  color: var(--kcc-gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.about-hero h1 {
+  color: white;
+  font-size: 43px;
+  font-weight: 800;
+  margin: 18px 0;
+  max-width: 750px;
+  line-height: 1.25;
+}
+
+.about-hero p {
+  color: #e3e8ef;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 650px;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+  background: #f5f6f9;
+  padding: 15px 0;
+}
+
+.breadcrumb-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.breadcrumb-content a {
+  color: var(--kcc-navy);
+  font-weight: 600;
+}
+
+.breadcrumb-content i {
+  color: var(--kcc-gold);
+}
+
+.breadcrumb-content span {
+  color: #818b99;
+}
+
+/* ABOUT US */
+
+.about-us {
+  padding: 85px 0;
+  background: white;
+}
+
+.about-image-wrapper {
+  position: relative;
+  padding: 10px;
+}
+
+.about-main-image {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.12);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.image-caption i {
+  color: var(--kcc-gold);
+  font-size: 30px;
+}
+
+.image-caption strong {
+  display: block;
+  color: var(--kcc-navy);
+  font-size: 13px;
+}
+
+.image-caption span {
+  color: var(--kcc-text);
+  font-size: 11px;
+}
+
+.about-us p {
+  color: var(--kcc-text);
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.about-check-list {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about-check-list div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--kcc-navy);
+}
+
+.about-check-list i {
+  color: var(--kcc-gold);
+  font-size: 18px;
+}
+
+.about-btn {
+  display: inline-block;
+  background: var(--kcc-gold);
+  color: var(--kcc-navy);
+  padding: 13px 24px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.about-btn:hover {
+  background: var(--kcc-navy);
+  color: white;
+}
+
+.about-btn i {
+  margin-left: 7px;
+}
+
+/* HISTORY */
+
+.history-section {
+  background: var(--kcc-navy);
+  padding: 85px 0;
+}
+
+.history-section .section-header h2 {
+  color: white;
+}
+
+.history-section .section-header p {
+  color: #cbd4e0;
+}
+
+.history-year {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+}
+
+.history-year span {
+  color: var(--kcc-gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.history-year h2 {
+  color: white;
+  font-size: 75px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.history-line {
+  width: 65px;
+  height: 4px;
+  background: var(--kcc-gold);
+  margin: 20px auto;
+}
+
+.history-year p {
+  color: #cbd4e0;
+  font-size: 13px;
+}
+
+.history-content {
+  padding: 25px;
+}
+
+.history-content h3 {
+  color: var(--kcc-gold);
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.history-content p {
+  color: #d4dce7;
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* VALUES */
+
+.values-section {
+  background: var(--kcc-light);
+  padding: 85px 0;
+}
+
+.value-card {
+  background: white;
+  padding: 35px 25px;
+  height: 100%;
+  border-radius: 12px;
+  border-bottom: 4px solid transparent;
+  box-shadow: 0 5px 25px rgba(0,0,0,.04);
+  transition: .3s;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  border-bottom-color: var(--kcc-gold);
+  box-shadow: 0 12px 30px rgba(0,0,0,.09);
+}
+
+.value-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbf4e5;
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+.value-icon i {
+  color: var(--kcc-gold);
+  font-size: 30px;
+}
+
+.value-card h4 {
+  color: var(--kcc-navy);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: var(--kcc-text);
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* EDUCATION */
+
+.education-section {
+  padding: 85px 0;
+  background: white;
+}
+
+.education-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.education-section p {
+  color: var(--kcc-text);
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 18px;
+}
+
+/* MISSION */
+
+.mission-section {
+  padding: 85px 0;
+  background: var(--kcc-light);
+}
+
+.mission-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 55px 45px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  border-top: 5px solid var(--kcc-gold);
+  box-shadow: 0 8px 35px rgba(0,0,0,.05);
+}
+
+.mission-icon {
+  color: var(--kcc-gold);
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.mission-box h2 {
+  color: var(--kcc-navy);
+  font-size: 35px;
+  font-weight: 800;
+  margin: 12px 0 20px;
+}
+
+.mission-box p {
+  color: var(--kcc-text);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.mission-quote {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 22px;
+  background: #fbf4e5;
+  color: var(--kcc-navy);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+/* CTA */
+
+.about-cta {
+  padding: 80px 0;
+  background:
+    linear-gradient(rgba(9,27,50,.93), rgba(9,27,50,.93)),
+    url('../img/about/about-banner.jpg') center/cover;
+}
+
+.about-cta span {
+  color: var(--kcc-gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-cta h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 18px 0;
+}
+
+.about-cta p {
+  color: #d2dae5;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 27px;
+  background: var(--kcc-gold);
+  color: var(--kcc-navy);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.cta-btn:hover {
+  background: white;
+  color: var(--kcc-navy);
+}
+
+/* FOOTER */
+
+#footer.footer {
+  background: var(--kcc-dark);
+  padding-top: 65px;
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.footer-logo span {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.footer-description {
+  color: #bdc8d7;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+#footer h4 {
+  color: var(--kcc-gold);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+#footer ul li {
+  margin-bottom: 12px;
+}
+
+#footer ul li a,
+#footer p {
+  color: #bdc8d7;
+  font-size: 12px;
+  line-height: 1.9;
+  transition: .3s;
+}
+
+#footer ul li a:hover,
+#footer p a:hover {
+  color: var(--kcc-gold);
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(255,255,255,.1);
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.footer-social a:hover {
+  background: var(--kcc-gold);
+  color: var(--kcc-navy);
+}
+
+.footer-bottom {
+  margin-top: 35px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #bdc8d7;
+  font-size: 12px;
+}
+
+/* SCROLL TOP */
+
+#scroll-top {
+  background: var(--kcc-gold);
+  color: var(--kcc-navy);
+  border-radius: 50%;
+}
+
+#scroll-top:hover {
+  background: var(--kcc-navy);
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 991px) {
+
+  #header .btn-getstarted {
+    display: none;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-main-image {
+    height: 350px;
+  }
+
+  .section-heading {
+    font-size: 29px;
+  }
+
+}
+
+@media(max-width: 768px) {
+
+  .about-hero {
+    min-height: 350px;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-hero p {
+    font-size: 12px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .section-heading {
+    font-size: 27px;
+  }
+
+  .about-us,
+  .history-section,
+  .values-section,
+  .education-section,
+  .mission-section {
+    padding: 60px 0;
+  }
+
+  .about-main-image {
+    height: 300px;
+  }
+
+  .education-image {
+    height: 300px;
+  }
+
+  .history-year h2 {
+    font-size: 60px;
+  }
+
+  .mission-box {
+    padding: 40px 22px;
+  }
+
+  .about-cta h2 {
+    font-size: 28px;
+  }
+
+}
+
+@media(max-width: 576px) {
+
+  #header .logo img {
+    width: 43px;
+    height: 43px;
+  }
+
+  #header .logo-text h1 {
+    font-size: 20px;
+  }
+
+  #header .logo-text span {
+    font-size: 8px;
+  }
+
+  .about-hero h1 {
+    font-size: 27px;
+  }
+
+  .image-caption {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+}
